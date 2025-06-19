@@ -14,13 +14,13 @@ import java.io.IOException;
 public class Test extends HttpServlet {
 
     @EJB
-    UserSessionBean userSession;
+    UserSessionBean userSessionBean;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         response.getWriter().write("Hello World");
-        userSession.doAction();
+        userSessionBean.doAction("Amal",22);
 
     }
 }
