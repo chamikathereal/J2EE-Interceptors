@@ -19,8 +19,13 @@ public class Test extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        try {
+            String action = userSessionBean.doAction("Amal", 22);
+            System.out.println("UserSessionBean - doAction ic.proceed: " + action);
+        } catch (Exception e) {
+
+        }
         response.getWriter().write("Hello World");
-        userSessionBean.doAction("Amal",22);
 
     }
 }

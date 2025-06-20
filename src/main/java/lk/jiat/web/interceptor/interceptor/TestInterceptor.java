@@ -31,7 +31,7 @@ public class TestInterceptor {
 
     @AroundInvoke
     public Object intercept(InvocationContext ic) throws Exception {
-        System.out.println("TestInterceptor - intercept...");
+        System.out.println("TestInterceptor - intercept start");
         //System.out.println("TestInterceptor Name: " + ic.getMethod().getName());
         //out put - [[TestInterceptor Name: doAction]]
 
@@ -61,8 +61,11 @@ public class TestInterceptor {
         //System.out.println("TestInterceptor - constructor : " + constructor);
         //out put - [[TestInterceptor - constructor : null]]
 
-        ic.proceed();
-        return null;
+        Object proceed = ic.proceed();
+        System.out.println("TestInterceptor - intercept proceed: " + proceed);
+
+        System.out.println("TestInterceptor - intercept end");
+        return proceed;
     }
 
     @PreDestroy
