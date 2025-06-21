@@ -7,7 +7,7 @@
 ---
 
 ## 📽️ Demo Video
-[![J2EE-Interceptors Project Demo](https://github.com/chamikathereal/J2EE-Interceptors/blob/main/J2EE-Interceptors.png)](https://youtu.be/kAnNUfUK1kY)
+[![J2EE-Interceptors Project Demo](https://github.com/chamikathereal/J2EE-Interceptors/blob/main/J2EE-Interceptors.png)](https://youtu.be/gBETeOlbXQk)
 
 ---
 
